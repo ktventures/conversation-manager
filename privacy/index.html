@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy policy for Conversation Manager for ChatGPT." />
+    <title>Privacy Policy · Conversation Manager</title>
+    <link rel="icon" href="../assets/icon-128.png" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><nav class="nav"><a class="brand" href="../"><img src="../assets/icon-128.png" alt="" /><span>Conversation Manager</span></a><div class="nav-links"><a href="../">Home</a><a href="../support/">Support</a><a class="coffee-link" href="https://buymeacoffee.com/ktventures" rel="noreferrer">☕ Support</a></div></nav></header>
+    <main class="legal">
+      <div class="legal-header"><p class="eyebrow">PRIVACY POLICY</p><h1>Your conversations stay yours.</h1><p class="lead">Conversation Manager does not operate a developer-controlled server, sell user data, or use analytics or advertising trackers.</p><p class="language-note">Effective August 26, 2026 · English followed by 简体中文</p></div>
+      <article>
+        <h2>English</h2>
+        <p>Conversation Manager for ChatGPT is an independent browser extension that helps users organize and manage conversations in their own ChatGPT account. The current version lets users select and delete conversations through a paced, resumable queue. It is not affiliated with or endorsed by OpenAI.</p>
+        <h3>Data the extension handles</h3>
+        <p>To provide its user-facing functionality, the extension reads conversation metadata from the user's signed-in ChatGPT tab, including conversation identifiers, titles, and available timestamps. It stores the selected deletion queue, task status, retry information, and limited diagnostic logs in <code>chrome.storage.local</code> on the user's device.</p>
+        <p>The extension temporarily obtains the current ChatGPT session access token inside the ChatGPT page solely to make same-origin requests requested by the user. The token is not returned to the extension service worker, written to extension storage, included in logs, or sent to the developer.</p>
+        <h3>How data is used</h3>
+        <p>Conversation metadata is used only to display the user's conversation list and carry out deletion tasks selected by the user. Queue data is used only to show progress, resume interrupted work, apply rate-limit backoff, and report failures.</p>
+        <h3>Data sharing and remote collection</h3>
+        <p>The extension does not operate a developer-controlled server. It does not sell user data, use analytics, create advertising profiles, or transmit conversation titles, identifiers, ChatGPT credentials, queue contents, or browsing activity to the developer or advertising companies.</p>
+        <p>List and deletion requests are sent only to <code>https://chatgpt.com</code> as necessary to provide the extension's stated function. The optional Buy Me a Coffee button opens <code>https://buymeacoffee.com/ktventures</code> without adding conversation data or extension telemetry to the link.</p>
+        <h3>Retention and deletion</h3>
+        <p>Queue state and limited logs remain in local extension storage so interrupted tasks can recover. Starting a new task replaces the active queue state, and diagnostic list logs are replaced when a new list load begins. Users can delete all locally stored extension data by uninstalling the extension or clearing its extension data in Chrome.</p>
+        <h3>Security and Limited Use</h3>
+        <p>All network requests use HTTPS. Conversation Manager's use of information obtained through Chrome permissions complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. User data is used only to provide the extension's user-facing conversation management features.</p>
+        <h3>Third-party services</h3>
+        <p>ChatGPT and Buy Me a Coffee are third-party services governed by their own privacy policies. Conversation Manager relies on ChatGPT website interfaces that may change over time.</p>
+        <h3>Changes and contact</h3>
+        <p>This policy may be updated if the extension's data practices change. Material changes will be reflected in the extension listing or interface as required. Questions can be submitted through the <a href="../support/">support page</a>.</p>
+
+        <h2 lang="zh-CN">简体中文</h2>
+        <div lang="zh-CN">
+          <p>Conversation Manager for ChatGPT 是一个独立浏览器扩展，帮助用户整理和管理自己 ChatGPT 账户中的对话。当前版本支持通过控制节奏的可恢复队列选择并删除对话。本扩展与 OpenAI 无隶属或官方认可关系。</p>
+          <h3>扩展处理的数据</h3>
+          <p>为了提供面向用户的功能，扩展会从用户已登录的 ChatGPT 标签页读取对话元数据，包括对话 ID、标题和可用时间。扩展还会将用户选择的删除队列、任务状态、重试信息和有限的诊断日志保存在用户设备上的 <code>chrome.storage.local</code> 中。</p>
+          <p>扩展会在 ChatGPT 页面内部临时取得当前会话 access token，仅用于执行用户要求的同源请求。Token 不会返回扩展 Service Worker、写入扩展存储、出现在日志中或发送给开发者。</p>
+          <h3>数据用途</h3>
+          <p>对话元数据仅用于显示用户的对话列表并执行用户选择的删除任务。队列数据仅用于显示进度、恢复中断任务、执行限流退避和报告失败原因。</p>
+          <h3>数据共享和远程收集</h3>
+          <p>本扩展没有开发者控制的服务器，不出售用户数据，不使用分析服务，不建立广告画像，也不会向开发者或广告公司传输对话标题、ID、ChatGPT 凭据、队列内容或浏览活动。</p>
+          <p>列表和删除请求仅在实现扩展功能所必需时发送到 <code>https://chatgpt.com</code>。可选的“请我喝杯咖啡”按钮会打开 <code>https://buymeacoffee.com/ktventures</code>，链接中不会附带对话数据或扩展遥测信息。</p>
+          <h3>数据保留和删除</h3>
+          <p>队列状态和有限日志会保存在本地扩展存储中，以便恢复中断任务。创建新任务时会替换当前队列；重新读取列表时会替换列表诊断日志。用户可以通过卸载扩展或在 Chrome 中清除扩展数据来删除所有本地保存的数据。</p>
+          <h3>安全与 Limited Use</h3>
+          <p>所有网络请求均使用 HTTPS。Conversation Manager 对通过 Chrome 权限获得的信息的使用遵守 Chrome Web Store User Data Policy，包括 Limited Use 要求。用户数据仅用于提供扩展面向用户的对话管理功能。</p>
+          <h3>第三方服务</h3>
+          <p>ChatGPT 和 Buy Me a Coffee 是第三方服务，适用其各自的隐私政策。本扩展依赖可能随时间变化的 ChatGPT 网页接口。</p>
+          <h3>更新与联系</h3>
+          <p>如果扩展的数据处理方式发生变化，本政策可能更新；重大变化将按要求在扩展商店页面或用户界面中披露。如有问题，请通过<a href="../support/">支持页面</a>联系我们。</p>
+        </div>
+      </article>
+    </main>
+    <footer><div class="footer-inner"><span>© 2026 KTVentures · Conversation Manager</span><div class="footer-links"><a href="../">Home</a><a href="../support/">Support</a></div></div></footer>
+  </body>
+</html>
